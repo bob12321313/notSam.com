@@ -7,9 +7,17 @@
   <h1>this is not a scam.</h1>
   <form>
     <h3>wanna be a billion-air?</h3>
-    <input type="text" placeholder="name">
+    <input type="text" placeholder="name" id="name">
     <p>this is free!</p>
-    <button type="submit">Enter To Win!</button>
+    <button type="submit" onclick="submit()">Enter To Win!</button>
   </form>
+
+  <script>
+    const name = document.getElementById('name');
+    function submit() {
+      alert('bye bye ' + name + '!');
+      window.location.href = 'https://bob12321313.github.io/www.stuff.com/';
+    }
+  </script>
 </body>
 </html>
